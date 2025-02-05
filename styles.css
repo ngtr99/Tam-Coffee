@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: rgb(195, 44, 69);
+}
+
+img {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.nav-button-services, .nav-button-gallery, .nav-button-contact {
+    display: inline-block;
+    background-color: #927644; /* Blue color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin: 5px; /* Adds spacing between buttons */
+}
+
+.nav-button-services:hover {
+    background-color: #e05125; /* Darker blue when hovered */
+}
+
+.nav-button-gallery:hover {
+    background-color: #e05125; /* Darker blue when hovered */
+}
+
+.nav-button-contact:hover {
+    background-color: #e05125; /* Darker blue when hovered */
+}
+
+
+.nav-button-home {
+    background-color: #927644; /* Blue color */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.nav-button-home:hover {
+    background-color: #e05125; /* Darker blue when hovered */
+}
+
+header {
+    color: rgb(195, 44, 69);
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+.heading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+  
+h1 {
+    font-family: Fantasy;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: rgb(195, 44, 69);
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(195, 44, 69);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.body-content, nav, section, footer {
+    display: none;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
