@@ -145,7 +145,24 @@ footer {
     right: 0;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 399px) {
+    .heading-content {
+        font-size: 0.4rem;
+    }
+    .nav-button-services, .nav-button-gallery, .nav-button-contact {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .services {
+        margin-left: -20%;
+    }
+    .nav-button-home {
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
     .heading-content {
         font-size: 0.5rem;
     }
