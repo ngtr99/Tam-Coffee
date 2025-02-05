@@ -4,7 +4,7 @@ document.body.style.backgroundImage = "url('header.png')";
 document.body.style.backgroundSize = 'cover';
 document.body.style.backgroundPosition = 'center';
 
-// Create the flower image
+
 const button = document.createElement('button');
 button.onclick = moveCloud;
 button.className = 'nav-button-home';
@@ -14,27 +14,46 @@ document.body.appendChild(button);
 function moveCloud() {};
 
 button.addEventListener('click', function() {
-    const cloud = document.createElement('img');
-    cloud.src = 'cloud.png';
-    cloud.style.position = 'absolute';
-    cloud.style.left = '0';
-    cloud.style.top = '50%';
-    cloud.style.transform = 'translateY(-50%)';
-    cloud.style.transition = 'left 3s';
-    cloud.style.overflow = 'visible';
-    document.body.appendChild(cloud);
+    document.querySelector('.heading-content').style.display = 'block';
+    document.getElementById('services').style.display = 'none';
+    document.getElementById('gallery').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
 
-setTimeout(() => {
-    cloud.style.left = '100%';
-}, 0);
-
-    // Create the option page
     document.body.style.backgroundImage = "url('background.png')";
     document.querySelector('nav').style.display = 'block'; 
 });
 
 document.querySelector('.nav-button-services').addEventListener('click', function() {
-    
+    document.getElementById('services').style.display = 'block';
+    document.getElementById('gallery').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
+    document.querySelector('.heading-content').style.display = 'none';
+    document.querySelector('nav').style.display = 'block';
+    document.querySelector('nav').style.transform = 'translateY(-50px)';
+    document.querySelector('nav').style.transition = 'transform 0.5s ease';
 
 
 });
+
+
+document.querySelector('.nav-button-gallery').addEventListener('click', function() {
+    document.getElementById('gallery').style.display = 'block';
+    document.getElementById('services').style.display = 'none';
+    document.getElementById('contact').style.display = 'none';
+    document.querySelector('.heading-content').style.display = 'none';
+    document.querySelector('nav').style.display = 'block';
+    document.querySelector('nav').style.transform = 'translateY(-50px)';
+    document.querySelector('nav').style.transition = 'transform 0.5s ease';
+
+});
+
+document.querySelector('.nav-button-contact').addEventListener('click', function() {
+    document.getElementById('contact').style.display = 'block';
+    document.getElementById('services').style.display = 'none';
+    document.getElementById('gallery').style.display = 'none';
+    document.querySelector('.heading-content').style.display = 'none';
+    document.querySelector('nav').style.display = 'block';
+    document.querySelector('nav').style.transform = 'translateY(-50px)';
+    document.querySelector('nav').style.transition = 'transform 0.5s ease';
+});
+

@@ -8,6 +8,22 @@
 </head>
 
 <body>
+    <div id="google_translate_element" class="button-translating"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" 
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+
     <div class = "container">
 
     <header class="heading-content">
@@ -15,25 +31,91 @@
     </header>
 
     <nav class = "body-content">
-        <button id="services" class="nav-button-services">Services</class></button>
-        <button id="gallery" class="nav-button-gallery">Gallery</button></button>
-        <button id="gallery" class="nav-button-contact">Contact</button></button>
+        <button  class="nav-button-services">Services</class></button>
+        <button class="nav-button-gallery">Gallery</button></button>
+        <button class="nav-button-contact">Contact</button></button>
     </nav>
-
+    
+    <div class ="menu">
         <section id="services" class="services content">
-            <h2 id="services">Our Services</h2>
-            <p id="services"class ="item">PEDICURE</p><p class="price" id="services"></p>
-            <p id="services" class ="item">PEDICURE</p><p class="price" id="services"></p>
+            <p id="services"class ="categories">PEDICURE</p>
+            <article>
+                <p id="services"class ="item">Warming Pedicure         </p>
+                <p class="price" id="services">30.000</p>
+            </article>
+
+            <article>
+                <p id="services"class ="item">Warming Pedicure With Gel</p>
+                <p class="price" id="services">50.000</p>
+            </article>
+
+            <p id="services" class ="categories">MANICURE</p>
+
+            <article>
+
+            </article>
+            <p id="services"class ="item">Warming Manicure             </p>
+            <p class="price" id="services">30.000</p>
+
+            <article>
+                
+            </article>
+            <p id="services"class ="item">Warming Manicure With Gel    </p>
+            <p class="price" id="services">50.000</p>
+            
+            <p id="services" class ="categories">FULL SET</p>
+            <article>
+                
+            </article>
+            <p id="services"class ="item">Acrylic Full Set             </p>
+            <p class="price" id="services">30.000</p>
+
+            <article>
+                <p id="services"class ="item">Ombre /two-tones Full Set</p>
+                <p class="price" id="services">50.000</p>               
+            </article>
+
+
+            <p id="services" class ="categories">FILLS</p>
+            <article>
+                <p id="services"class ="item">Acrylic Refill           </p>
+                <p class="price" id="services">30.000</p>
+            </article>
+
+            <article>
+                <p id="services"class ="item">Ombre /two-tones Refill   </p>
+                <p class="price" id="services">50.000</p>               
+            </article>
+
+            <p id="services" class ="categories">DIP</p>
+            <article>
+                <p id="services"class ="item">Dipping                   </p>
+                <p class="price" id="services">30.000</p>                
+            </article>
+
+            <p id="services" class ="categories">KID'S SERVICES</p>
+            <article>
+                <p id="services"class ="item">Kid Manicure              </p>
+                <p class="price" id="services">15.000</p>
+            </article>
+
+            <article>
+                <p id="services"class ="item">Kid Pedicure              </p>
+                <p class="price" id="services">15.000</p>
+            </article>
+
         </section>
-
+    </div>
+    
         <section id="gallery" class="gallery content">
-            <h2 id="gallery">Gallery</h2>
-
+           
         </section>
 
         <section id="contact" class="contact content">
             <h2>Contact Us</h2>
             <p id="appoiment">Make an appoiment</p>
+            <p id="phone">Phone: 090-655-88-58</p>
+            <p id="address">Address: 216 Huỳnh Tấn Phát, Khuê Trung, Cẩm Lệ, Đà Nẵng</p>
         </section>
 
     </div>
