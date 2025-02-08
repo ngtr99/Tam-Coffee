@@ -136,7 +136,6 @@ checkboxes.forEach(checkbox => {
 
 
 
-
 // Comment
 const commentTable = document.createElement('div');
 commentTable.className = 'comment-table';
