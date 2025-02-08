@@ -1,281 +1,172 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    color: rgb(195, 44, 69);
-    text-align: center;
-}
+/*heading*/
 
-img {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-}
-
-.nav-button-services, .nav-button-gallery, .nav-button-contact {
-    display: inline-block;
-    background-color: #927644; /* Blue color */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background 0.3s;
-    margin: 5px; /* Adds spacing between buttons */
-}
-
-.nav-button-services:hover {
-    background-color: #e05125; /* Darker blue when hovered */
-}
-
-.nav-button-gallery:hover {
-    background-color: #e05125; /* Darker blue when hovered */
-}
-
-.nav-button-contact:hover {
-    background-color: #e05125; /* Darker blue when hovered */
+body{
+    margin:0%;
+    background: url('pic.png') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
 }
 
 
-.nav-button-home {
-    background-color: #927644; /* Blue color */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-}
 
-.nav-button-home:hover {
-    background-color: #e05125; /* Darker blue when hovered */
-}
+/*Class*/
 
-header {
-    color: rgb(195, 44, 69);
-    padding: 0.5em 0;
-    text-align: center;
-}
-
-.heading-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-  
-h1 {
-    font-family: Fantasy;
-}
-
-
-nav {
+.greet{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw;
+    top: 2%;
+    color: rgb(131, 107, 36);
 }
 
-nav a {
-    color: rgb(195, 44, 69);
-    text-decoration: none;
-}
 
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(195, 44, 69);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.body-content, nav, section, footer {
+/*Menu*/
+.menu-container {
     display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    overflow-y: auto;
+    position: fixed;
+    font-size: 2vw;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
-footer {
-    color: white;
+/*Contact*/
+.contact-container{
+    top: 3%;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
+    font-size: 2vw;
     width: 100%;
-    bottom: 0;
+    color: rgb(175, 105, 20);
 }
 
-.item {
-    text-align: left;
-}
-
-.price {
-    text-align: right;
-}
-
-.services {
-    background-color: #fce4a5;
-    width: 120%;
-    padding: 20px;
-    overflow-y: scroll;
-    max-height: 400px;
-}
-
-.categories {
-    font-weight: bolder;
-    font-size: 150%;
-    font-family: Cambria;
+/*Booking*/
+.booking-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: rgb(63, 100, 43);
-}
-
-.button-translating {
+    left: 32%;
+    top: 25%;
     position: fixed;
-    top: 0;
-    right: 0;
+    font-size: 2vw;
+    color: rgb(18, 30, 108);
 }
 
-@media screen and (max-width: 399px) {
-    .heading-content {
-        font-size: 0.4rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        font-size: 12px;
-        margin: 0 auto;
-        padding: 0%;
-        display: inline-block;
-    }
-    .nav-button-home {
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-    .services {
-        margin: 0 auto;
-    }
-    .item, .price, .categories {
-        font-size: 12px;
-    }
+.booking-table {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    transform: translateX(-50%);
+    overflow-y: auto;
+    position: fixed;
+    font-size: 2vw;
+    color: rgb(29, 91, 87);
+    max-height: 45%;
 }
 
-@media screen and (min-width: 400px) and (max-width: 576px) {
-    .heading-content {
-        font-size: 0.5rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        font-size: 15px;
-        margin: 0 auto;
-        padding: 0%;
-        display: inline-block;
-    }
-    .nav-button-home {
-        padding: 5px 10px;
-        font-size: 15px;
-    }
-    .item, .price, .categories {
-        font-size: 15px;
-    }
+.key {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight:bolder;
 }
 
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    .heading-content {
-        font-size: 1rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        font-size: 15px;
-    }
-    .services {
-        margin: 0 auto;
-    }
-    .nav-button-home {
-        padding: 5px 10px;
-        font-size: 15px;
-    }
-    .item, .price, .categories {
-        font-size: 15px;
-    }
+.value {
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .heading-content {
-        font-size: 1.5rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        padding: 5px 10px;
-        font-size: 35px;
-    }
-    .services {
-        width: 130%;
-        margin-left: -20%;
-        overflow-y: scroll;
-        max-height: 400px;
-    }
-    .item, .price, .categories {
-        font-size: 30px;
-    }
-    .nav-button-home {
-        padding: 5px 10px;
-        font-size: 35px;
-    }
+.order {
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .heading-content {
-        font-size: 1.3rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        padding: 10px 20px;
-        font-size: 40px;
-    }
-    .services {
-        width: 130%;
-        margin-left: -20%;
-        overflow-y: scroll;
-        max-height: 500px;
-    }
-    .item, .price, .categories {
-        font-size: 25px;
-    }
-    .nav-button-home {
-        padding: 10px 20px;
-        font-size: 40px;
-    }
-    .contact {
-        font-size: 25px;
-    }
+#total{
+    font-weight:bolder;
 }
 
-@media only screen and (min-width: 1441px) {
-    .heading-content {
-        font-size: 2rem;
-    }
-    .nav-button-services, .nav-button-gallery, .nav-button-contact {
-        padding: 10px 20px;
-        font-size: 45px;
-    }
-    .services {
-        width: 130%;
-        margin-left: -20%;
-        overflow-y: scroll;
-        max-height: 600px;
-    }
-    .item, .price, .categories {
-        font-size: 45px;
-    }
-    .nav-button-home {
-        padding: 10px 20px;
-        font-size: 40px;
-    }
-    .contact {
-        font-size: 25px;
-    }
+#name, #phone {
+    margin-bottom: 2%;
+    margin-top: 2%; 
+}
+
+
+
+
+
+
+/*Comment*/
+
+.comment-table {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40%;
+    left: 20%;
+    position: fixed;
+    width: 60%;
+    height: 50%;
+}
+
+.feedback {
+    display: none;
+    top: 70%;
+    left: 48%;
+    position: fixed;
+    size: 2vw;
+    color: rgb(188, 118, 26);
+}
+
+.feedback-detail{
+    width: 100%;
+    height: 50%;
+}
+/*Button*/
+
+.container-btn {
+    top: 15%;
+    left:0;
+    right:0;
+    position: fixed;
+    font-size: 2vw;
+}
+
+.menu, .contact, .comment {
+    background-color: rgb(222, 185, 137);
+    width: 30%;
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    display: list-item;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+
+}
+
+.home{
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    background-color: rgb(205, 172, 129);
+    font-size: 100%;
+    border-radius: 0%;
+    font-size: 2vw;
 }
